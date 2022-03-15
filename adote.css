@@ -14,17 +14,18 @@ header {
   align-items: center;
 }
 
-h1{
+h1 {
   margin: 10px;
 }
 
-h1:hover{
-  font-size: 80px;
+h1:hover {
+  font-size: 60px;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 10px;
   width: 50%;
 }
 
@@ -35,17 +36,71 @@ ul {
 li {
   list-style: none;
   padding: 10px;
+  cursor: pointer;
 }
 
-li:nth-child(odd){
+li:nth-child(odd) {
   color: #f2f2f2;
+}
+
+main{
+  width: 50%;
+  text-align: center;
+  margin: 70px auto;
+  font-size: 20px;
+}
+
+.titulo-secundario{
+  margin: 40px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+}
+
+.card1 h3, .card2 h3, .card3 h3{
+  text-align: center;
+  margin: 20px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: translateX(-5px);
+  cursor: pointer;
+}
+
+.dog1,
+.dog2,
+.dog3 {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
 
 @media (max-width: 700px) {
   header {
     height: auto;
     justify-content: center;
-    background-color: #6B705C;
+    background-color: #6b705c;
   }
 
   h1 {
@@ -58,8 +113,8 @@ li:nth-child(odd){
     padding: 0;
   }
 
-  li{
+  li {
     padding: 10px;
-    color: #FFE8D6;
+    color: #ffe8d6;
   }
 }
