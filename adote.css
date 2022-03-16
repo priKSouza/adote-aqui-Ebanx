@@ -33,13 +33,15 @@ ul {
   display: flex;
 }
 
-li {
+a {
   list-style: none;
   padding: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
 
-li:nth-child(odd) {
+a:nth-child(odd) {
   color: #f2f2f2;
 }
 
